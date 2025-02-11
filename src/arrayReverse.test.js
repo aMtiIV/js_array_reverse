@@ -16,7 +16,8 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse([''])).toEqual(['']);
   });
 
-  it(`should reverse single string`, () => {
+  it(`should reverse single string
+    if original array consists of only one string`, () => {
     expect(arrayReverse(['Mate'])).toEqual(['etaM']);
   });
 
@@ -28,7 +29,8 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse(['Mate', ''])).toEqual(['etaM', '']);
   });
 
-  it(`should return multiple empty strings`, () => {
+  it(`should return multiple empty strings
+    if original array consists of only empty strings`, () => {
     expect(arrayReverse(['', ''])).toEqual(['', '']);
   });
 
